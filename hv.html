@@ -1,0 +1,158 @@
+<html>
+<title>MCPE Modding tutorials/hooks and vars</title>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="script" href="javascript.js">
+</head>
+<body>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="functions.html">Function list</a></li>
+  <li><a class="active" href="hv.html">hooks and vars</a></li>
+  <li><a href="render.html">render types</a></li>
+  <li><a href="FAQ.html">FAQ</a></li>
+<li><a href="sandbox.html">sandbox (test your knowlege)</a></li>
+</ul>
+<footer>
+Hooks and vars
+</footer>
+<footer>
+Hooks:
+</footer>
+<p>
+hooks are functions that are used to call other functions when certain events happen
+<br>
+list of hooks:
+<br>
+function newlevel(){
+<br>
+}
+<br>
+------------------
+<br>
+function attackhook(attacker,victim){
+<br>
+}
+<br>
+------------------
+<br>
+function modtick(){
+<br>
+}
+<br>
+------------------
+<br>
+function useItem(x,y,z,itemId,blockId,side,itemDamage,blockDamage){
+<br>
+}
+<br>
+------------------
+<br>
+function procCmd(cmd){
+<br>
+}
+<br>
+------------------
+<br>
+function leaveGame(){
+<br>
+}
+<br>
+------------------
+<br>
+function entityAddedHook(entity){
+<br>
+}
+<br>
+------------------
+<br>
+function deathHook(murderer, victim){
+<br>
+}
+<br>
+------------------
+<br>
+function levelEventHook(entity,eventType,x,y,z,data){
+<br>
+}
+<br>
+------------------
+<br>
+</p>
+<footer>
+vars:
+</footer>
+<p>
+vars are variables and can equal whatever you want them to equal.
+<br>
+EX:
+<br>
+var x=3
+<br>
+"x" is the same as 3
+<br>
+vars can also not equal something untill a event occurs and is indicated by a ";" sign:
+<br>
+var x;
+<br>
+var y= if(example==true){
+<br>
+	x=3
+<br>
+}
+<br>
+if the example is true, x will equal 3
+<br>
+vars can equal strings (text)
+<br>
+var quote="hello world!"
+<br>
+so if you did this-
+<br>
+print(x)
+<br>
+OUTPUT:
+<br>
+hello world!
+<br>
+vars can also equal other vars
+<br>
+ex:
+<br>
+var x=3
+<br>
+var lol=x
+<br>
+var lol2=lol
+<br>
+there is no reason to do this other than in GUI's
+<br>
+vars can also equal functions
+<br>
+var getpx= getplayerx();
+<br>
+var getpy= getplayery();
+<br>
+var getpz= getplayerz();
+<br>
+this is good when you forget functions easy
+<br>
+vars are very usefull and will help you alot!
+</p>
+<footer>
+custom functions
+</footer>
+<p>
+custom functions: <a href="functions.html">see function list</a>
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+</p>
+
+</body>
+</html>
