@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <title>MCPE Modding tutorials/functions list</title>
 <head>
@@ -10,6 +11,7 @@
   <li><a href="hv.html">hooks and vars</a></li>
   <li><a href="render.html">render types</a></li>
   <li><a href="FAQ.html">FAQ</a></li>
+<li><a href="sandbox.html">sandbox (test your knowlege)</a></li>
 </ul>
 <footer>
 player functions
@@ -30,6 +32,18 @@ Player.getZ();
 Player.addItemCreativeInv(id,amount,damage);
 <br>
 Player.setCanFly(1/0);
+<br>
+Player.enchant(slot, enchantment, level)
+<br>
+Player.setInventorySlot(slot, itemId, count, damage)
+<br>
+Player.getEnchantments(slot)
+<br>
+Player.getItemCustomName(slot)
+<br>
+Player.setItemCustomName(slot, name)
+<br>
+
 </p>
 <footer>
 entity functions
@@ -140,7 +154,158 @@ modelPart.setRotationPoint(x, y, z)
 <br>
 
 </p>
+<footer>
+text function
+</footer>
+<p>
+print("text");
+<br>
+clientMessage("text");
 </p>
+<footer>
+get functions
+</footer>
+<p>
+getPlayerX();
+<br>
+getPlayerY();
+<br>
+getPlayerZ();
+<br>
+getPlayerEnt();
+<br>
+getYaw(ent);
+<br>
+getGamemode(gamemode);
+<br>
+getCarriedItem();
+<br>
+getTile(x,y,z);
+</p>
+<footer>
+set functions
+</footer>
+<p>
+setPosition(ent,x,y,z);
+<br>
+setPositionRelative(ent,x,y,z);
+<br>
+setRot(ent,yaw,pitch);
+<br>
+setVelX(ent,velocity);
+<br>
+setVelY(ent,velocity);
+<br>
+setVelZ(ent,velocity);
+<br>
+setGamemode(gamemode)
+<br>
+setTile(x,y,z,blockID,damageValue);
+<br>
+setPlayerHealth(halfHearts);
+</p>
+<footer>
+spawn functions
+</footer>
+<p>
+spawnCow(x,y,z,"image");
+<br>
+spawnChicken(x,y,z,"image");
+<br>
+spawnPigZombie(x,y,z,heldItemID,"image");
+</p>
+<footer>
+Miscellaneous Functions
+</footer>
+<p>
+explode(x,y,z,radius);
+<br>
+rideAnimal(player,target);
+<br>
+addItemInventory(ID,amount,damageValue);
+<br>
+preventDefault();
+</p>
+<footer>
+BlockLauncher-only Functions
+</footer>
+<p>
+ bl_spawnMob(x,y,z,mobID,"image");
+<br>
+setMobSkin(mob,"image");
+</p>
+<footer>
+Object-Orientated Functions
+</footer>
+<p>
+ModPE.leaveGame()
+<br>
+ModPE.overrideTexture("folder/targetTexture.png","http://example.org/potato.png");
+<br>
+ModPE.readData(key);
+<br>
+ModPE.removeData(key)
+<br>
+ModPE.resetImages();
+<br>
+ModPE.saveData(key,value);
+<br>
+ModPE.setItem(id,"texture",dataColourAmount,"name");
+<br>
+ModPE.setFoodItem(ID,imageX,imageY,halfHeartsHealed,"name");
+<br>
+Item.addCraftRecipe(id, count, damage, [inputid, inputcount, inputdamage, ...])
+<br>
+item.addShapedRecipe(id, count, damage, [topSquare, middleSquare, bottomSquare], [key, itemId, itemDamage,...])
+<br>
+Item.addFurnaceRecipe(outputid,outputdamage,inputid);
+<br>
+Item.setCategory(itemid,itemcategory);
+<br>
+ModPE.setGuiBlocks("http://example.org/potato.png");
+<br>
+ModPE.setItems("http://example.org/potato.png");
+<br>
+ModPE.setTerrain("http://example.org/potato.png")
+<br>
+ModPE.takeScreenshot("fileName");
+<br>
+
+</p>
+<footer>
+Level functions
+</footer>
+<p>
+Level.playSound(getPlayerX(),getPlayerY(),getPlayerZ(), sound, volume, pitch);
+<br>
+Level.playSoundEnt(ent, sound, volume, pitch);
+<br>
+Level.getData(x,y,z);
+<br>
+Level.getWorldDir();
+<br>
+Level.getWorldName();
+<br>
+Level.setChestSlot(x,y,z,slot,ID,damage,amount);
+<br>
+Level.setTile(x,y,z,blockID);
+<br>
+destroyBlock(x,y,z,shouldDropItem);
+<br>
+ 
+<br>
+
+<br>
+
+</p>
+<footer>
+other usefull stuff
+</footer>
+
+
+<!-- used for the effect function and the enchant functions -->
+
+
 <footer>
 mob effects
 <br>
@@ -191,5 +356,60 @@ MobEffect.movementSlowdown
 MobEffect.movementSpeed
 <br>
 </footer>
+<footer>
+enchantments
+</footer>
+<p>
+•Enchantment.PROTECTION
+<br>
+•Enchantment.FIRE_PROTECTION
+<br>
+•Enchantment.FEATHER_FALLING
+<br>
+•Enchantment.BLAST_PROTECTION
+<br>
+•Enchantment.PROJECTILE_PROTECTION
+<br>
+•Enchantment.THORNS
+<br>
+•Enchantment.RESPIRATION
+<br>
+•Enchantment.AQUA_AFFINITY
+<br>
+•Enchantment.DEPTH_STRIDER
+<br>
+•Enchantment.SHARPNESS
+<br>
+•Enchantment.SMITE
+<br>
+•Enchantment.BANE_OF_ARTHROPODS
+<br>
+•Enchantment.KNOCKBACK
+<br>
+•Enchantment.FIRE_ASPECT
+<br>
+•Enchantment.LOOTING
+<br>
+•Enchantment.EFFICIENCY
+<br>
+•Enchantment.SILK_TOUCH
+<br>
+•Enchantment.UNBREAKING
+<br>
+•Enchantment.FORTUNE
+<br>
+•Enchantment.POWER
+<br>
+•Enchantment.PUNCH
+<br>
+•Enchantment.FLAME
+<br>
+•Enchantment.INFINITY
+<br>
+•Enchantment.LUCK_OF_THE_SEA
+<br>
+•Enchantment.LURE
+</p>
+
 </body>
 </html>
