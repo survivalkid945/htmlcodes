@@ -1,0 +1,195 @@
+<html>
+<title>MCPE Modding tutorials/functions list</title>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="functions.html">Function list</a></li>
+  <li><a href="hv.html">hooks and vars</a></li>
+  <li><a href="render.html">render types</a></li>
+  <li><a href="FAQ.html">FAQ</a></li>
+</ul>
+<footer>
+player functions
+</footer>
+<p>
+addItemInventory(par1int, par2int, par3int);
+<br>
+Player.getCarriedItem();
+<br>
+Player.getEntity();
+<br>
+Player.getX();
+<br>
+Player.getY();
+<br>
+Player.getZ();
+<br>
+Player.addItemCreativeInv(id,amount,damage);
+<br>
+Player.setCanFly(1/0);
+</p>
+<footer>
+entity functions
+</footer>
+<p>
+Entity.setNameTag(ent);
+<br>
+Entity.getAnimalAge(ent);
+<br>
+Entity.setAnimalAge(ent,age);
+<br>
+Entity.getEntityTypeId(ent);
+<br>
+Entity.getPitch(ent);
+<br>
+Entity.getYaw(ent);
+<br>
+Entity.getX(ent);
+<br>
+Entity.getY(ent);
+<br>
+Entity.getZ(ent);
+<br>
+Entity.remove(ent);
+<br>
+Entity.rideAnimal(player,target);
+<br>
+Entity.setCarriedItem(ent,ID,int,DamageValue);
+<br>
+Entity.setPosition(ent,x,y,z);
+<br>
+Entity.setPositionRelative(ent,x,y,z);
+<br>
+Entity.setRot(ent,yaw,pitch);
+<br>
+Entity.setVelX(ent,vel);
+<br>
+Entity.setVelY(ent,vel);
+<br>
+Entity.setVelZ(ent,vel);
+<br>
+Entity.spawnMob(x,y,z,mobID,"image");
+<a href="render.html">see render types</a>
+<br>
+Entity.setRenderType(ent, type);
+<br>
+Entity.addEffect(entity, id, duration, amplification, ambient, showParticles);
+<br>
+Entity.removeEffect(entity, id);
+<br>
+Entity.removeAllEffects(entity);
+<br>
+Block.defineBlock(id,"name",[["bottom texture",type],["top texture",type],["south texture",type],["north texture",type],["west texture",type],["east texture",type]],materialSourceId,opaque,rendertype);
+<br>
+Block.setShape(id,x1,y1,z1,x2,y2,z2);
+<br>
+Block.setColor(id,color);
+<br>
+Block.setColor(1,[0xFF0000]);
+<br>
+Block.setDestroyTime(id,time);
+<br>
+Block.setExplosionResistance(id,resistance);
+<br>
+Block.setLightLevel(id,level);
+<br>
+Block.setLightOpacity(id,darkness);
+<br>
+ Block.setRenderLayer(id,renderLayer);
+<br>
+Render layer 1 is transparent.
+<br>
+Render layer 2 is translucent.
+<br>
+Render layer 0 is opaque.
+<br>
+Renderer.get(id)
+<br>
+Renderer.createHumanoidRenderer()
+<br>
+renderer.renderType
+<br>
+renderer.model
+<br>
+model.getPart("partName")
+<br>
+head
+<br>
+body
+<br>
+leftArm
+<br>
+rightArm
+<br>
+leftLeg
+<br>
+rightLeg
+<br>
+modelPart.setTextureOffset(textureX, textureY, transparent)
+<br>
+modelPart.addBox(xOffset, yOffset, zOffset, width, height, depth, scale)
+<br>
+modelPart.clear()
+<br>
+modelPart.setTextureSize(width, height)
+<br>
+modelPart.setRotationPoint(x, y, z)
+<br>
+
+</p>
+</p>
+<footer>
+mob effects
+<br>
+MobEffect.saturation
+<br>
+MobEffect.absorption
+<br>
+MobEffect.healthBoost
+<br>
+MobEffect.wither
+<br>
+MobEffect.poison
+<br>
+MobEffect.weakness
+<br>
+MobEffect.hunger
+<br>
+MobEffect.nightVision
+<br>
+MobEffect.blindness
+<br>
+MobEffect.invisibility
+<br>
+MobEffect.waterBreathing
+<br>
+MobEffect.fireResistance
+<br>
+MobEffect.damageResistance
+<br>
+MobEffect.regeneration
+<br>
+MobEffect.confusion
+<br>
+MobEffect.jump
+<br>
+MobEffect.harm
+<br>
+MobEffect.heal
+<br>
+MobEffect.damageBoost
+<br>
+MobEffect.digSlowdown
+<br>
+MobEffect.digSpeed
+<br>
+MobEffect.movementSlowdown
+<br>
+MobEffect.movementSpeed
+<br>
+</footer>
+</body>
+</html>
